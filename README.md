@@ -24,7 +24,9 @@
 ---
 
 ### 使用
-* 启动`Alfred`，输入`wx`启动该workflow。
+* 下载该 [wechat-alfred-workflow](https://github.com/TKkk-iOSer/wechat-alfred-workflow/releases) & [WeChatPlugin-macOS](https://github.com/TKkk-iOSer/WeChatPlugin-MacOS)
+
+* 启动`Alfred`，输入`wx`启动该 workflow。
 
 ![keyword](./ScreenShots/alfred_query.png)
 
