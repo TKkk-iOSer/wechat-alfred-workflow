@@ -4,7 +4,7 @@
 ![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)  ![release](https://img.shields.io/badge/release-v1.0-brightgreen.svg) 
  [![GitHub license](https://img.shields.io/github/license/TKkk-iOSer/wechat-workflow.svg)](https://github.com/TKkk-iOSer/wechat-workflow/blob/master/LICENSE)
  
-一款让你不用打开微信界面就能聊天的`alfred workflow`
+一款让你不用打开微信就能聊天的`alfred workflow`
 
 ---
 
