@@ -31,7 +31,7 @@
 
 ![keyword](./ScreenShots/alfred_query.png)
 
-* 搜索到好友，点击 `Enter` 键，并输入内容，则发送消息给好友(Tip: 若无显示好友内容，则输入的内容无法发送,例如字符：`'`)  
+* 搜索到好友，点击 `Enter` 键，并输入内容，则发送消息给好友。
 
 ![keyword](./ScreenShots/alfred_send.png)
 
