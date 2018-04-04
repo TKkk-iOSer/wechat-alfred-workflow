@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>tkkk.wechatPlugin</string>
-	<key>category</key>
-	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>0D88BE16-D0D5-4489-B54E-9C3A9C7FB187</key>
@@ -105,7 +103,7 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>wx</string>
 				<key>queuedelaycustom</key>
@@ -152,7 +150,7 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -191,7 +189,7 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>102</integer>
 				<key>script</key>
 				<string>python sendMsg.py "{query}"</string>
 				<key>scriptargtype</key>

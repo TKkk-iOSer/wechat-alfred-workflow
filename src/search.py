@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 import json,sys,os
-from datetime import datetime
 from workflow import Workflow, web
 
 reload(sys)
