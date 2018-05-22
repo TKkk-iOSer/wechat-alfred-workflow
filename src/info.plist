@@ -55,6 +55,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>951BA0D4-BF57-48C9-B977-D9A7C8A398A1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DF9DFCC2-CC36-4945-9B04-E02F397E7E7D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>EBC34E72-65EE-4D6A-8E7C-BA6D06F4A3A7</key>
 		<array/>
 	</dict>
@@ -90,6 +103,23 @@
 			<string>951BA0D4-BF57-48C9-B977-D9A7C8A398A1</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/WeChat.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>DF9DFCC2-CC36-4945-9B04-E02F397E7E7D</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -258,6 +288,13 @@
 		<dict>
 			<key>xpos</key>
 			<integer>500</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>DF9DFCC2-CC36-4945-9B04-E02F397E7E7D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>690</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
