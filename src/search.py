@@ -21,7 +21,7 @@ def main(wf):
                 subtitle = item['subTitle']
                 icon = item['icon']
                 userId = item['userId']
-                wf.add_item(title=title, subtitle=subtitle, icon=icon, arg=userId, valid=True)
+                wf.add_item(title=title, subtitle=subtitle, icon=icon, largetext=subtitle, arg=userId, valid=True)
         else:
             wf.add_item(title='找不到联系人…',subtitle='请重新输入')
     except IOError:

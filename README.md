@@ -29,12 +29,13 @@
 
 * 启动`Alfred`，输入`wx`启动该 workflow。
 
+* 启动`Alfred`，输入 `wx` + `空格` 键，快捷打开最近聊天会话。
+
 ![keyword](./ScreenShots/alfred_query.png)
 
-* 搜索到好友，点击 `Enter` 键，并输入内容，则发送消息给好友。
+* 搜索到好友，点击 `Enter` 键，并输入内容，则发送消息给好友(此时可看到下方30条最新聊天记录)。
 
 ![keyword](./ScreenShots/alfred_send.png)
-
 
 * 搜索到好友，点击 `Command + Enter` 键，快捷打开聊天窗口。
 

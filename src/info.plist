@@ -153,7 +153,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>↩: 快捷发送消息；⌘ + ↩：快捷打开窗口</string>
+				<string>↩: 快捷发送消息；⌘ + ↩：快捷打开窗口;  2个空格：查看最近聊天</string>
 				<key>title</key>
 				<string>微信小助手</string>
 				<key>type</key>
@@ -192,7 +192,7 @@
 				<key>runningsubtext</key>
 				<string>正在搜索中…</string>
 				<key>script</key>
-				<string>python convert.py "{query}"</string>
+				<string>python userChatLog.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
