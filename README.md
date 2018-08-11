@@ -5,7 +5,7 @@
   ![release](https://img.shields.io/badge/release-v2.0-brightgreen.svg) 
  [![GitHub license](https://img.shields.io/github/license/TKkk-iOSer/wechat-workflow.svg)](https://github.com/TKkk-iOSer/wechat-workflow/blob/master/LICENSE)
  
-一款让你不用打开微信~~(就能)~~不仅仅能聊天的`alfred workflow` 2.0
+一款让你不用打开微信就能聊天的`alfred workflow` 2.0
 
 ---
 
