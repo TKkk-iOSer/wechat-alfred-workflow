@@ -15,13 +15,14 @@ def main(wf):
         resp = result.text
         userList = json.loads(resp)
         if len(userList) > 0:
-            wf.store_data('wechat_search_user_list', userList)
             for item in userList:
                 title = item['title']
                 subtitle = item['subTitle']
                 icon = item['icon']
                 userId = item['userId']
-                wf.add_item(title=title, subtitle=subtitle, icon=icon, largetext=subtitle, arg=userId, valid=True)
+                copyText = item['copyText']
+                qlurl = item['url']
+                wf.add_item(title=title, subtitle=subtitle, icon=icon, largetext=title, copytext=copyText, quicklookurl=qlurl, arg=userId, valid=True)
         else:
             wf.add_item(title='找不到联系人…',subtitle='请重新输入')
     except IOError:

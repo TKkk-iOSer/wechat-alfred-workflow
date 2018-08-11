@@ -10,6 +10,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>951BA0D4-BF57-48C9-B977-D9A7C8A398A1</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>↩: 打开聊天窗口; C: 复制消息内容; L: 查看消息详情; Y: 预览非文本信息</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>EBC34E72-65EE-4D6A-8E7C-BA6D06F4A3A7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -23,11 +33,11 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>951BA0D4-BF57-48C9-B977-D9A7C8A398A1</string>
+				<string>C7F97CC1-A708-4992-9A14-DBCE8FED26BE</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>打开聊天窗口…</string>
+				<string>↩: 打开聊天窗口; C: 复制微信号</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -60,6 +70,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>DF9DFCC2-CC36-4945-9B04-E02F397E7E7D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C7F97CC1-A708-4992-9A14-DBCE8FED26BE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>951BA0D4-BF57-48C9-B977-D9A7C8A398A1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -124,6 +147,28 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>json</key>
+				<string>{
+  "alfredworkflow" : {
+    "arg" : "",
+    "config" : {
+    },
+    "variables" : {
+      "userId" : "{query}",
+    }
+  }
+}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.json</string>
+			<key>uid</key>
+			<string>C7F97CC1-A708-4992-9A14-DBCE8FED26BE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -131,7 +176,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -153,7 +198,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>↩: 快捷发送消息；⌘ + ↩：快捷打开窗口;  2个空格：查看最近聊天</string>
+				<string>↩: 快捷发送消息；⌘ + ↩：快捷打开窗口; ⌘ + C: 复制微信号</string>
 				<key>title</key>
 				<string>微信小助手</string>
 				<key>type</key>
@@ -178,7 +223,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>queuedelaycustom</key>
@@ -266,9 +311,9 @@
 		<key>0D88BE16-D0D5-4489-B54E-9C3A9C7FB187</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>510</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>190</integer>
 		</dict>
 		<key>7DECB235-5455-435D-90AF-1A51C26046DD</key>
 		<dict>
@@ -280,30 +325,37 @@
 		<key>807CF904-8DD6-45B7-B6FE-B0D7C190CC83</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<integer>430</integer>
 			<key>ypos</key>
 			<integer>220</integer>
 		</dict>
 		<key>951BA0D4-BF57-48C9-B977-D9A7C8A398A1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>730</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>C7F97CC1-A708-4992-9A14-DBCE8FED26BE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>40</integer>
 		</dict>
 		<key>DF9DFCC2-CC36-4945-9B04-E02F397E7E7D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>690</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
 		<key>EBC34E72-65EE-4D6A-8E7C-BA6D06F4A3A7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>840</integer>
+			<integer>860</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>190</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

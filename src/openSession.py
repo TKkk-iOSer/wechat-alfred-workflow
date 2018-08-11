@@ -7,7 +7,7 @@ sys.setdefaultencoding('utf-8')
 
 def main(wf):
     baseUrl = os.getenv('baseUrl')
-    userId = sys.argv[1]
+    userId = os.getenv('userId')
     url = baseUrl + 'open-session'
     data = {'userId': userId}
     r = web.post(url=url,data=data)

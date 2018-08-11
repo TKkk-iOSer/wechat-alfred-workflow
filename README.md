@@ -1,11 +1,11 @@
 
-## wechat workflow for Alfred
+## wechat workflow for Alfred 2.0
 
 ![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)  ![language](https://img.shields.io/badge/language-python-blue.svg)
-  ![release](https://img.shields.io/badge/release-v1.0-brightgreen.svg) 
+  ![release](https://img.shields.io/badge/release-v2.0-brightgreen.svg) 
  [![GitHub license](https://img.shields.io/github/license/TKkk-iOSer/wechat-workflow.svg)](https://github.com/TKkk-iOSer/wechat-workflow/blob/master/LICENSE)
  
-一款让你不用打开微信就能聊天的`alfred workflow`
+一款让你不用打开微信~~(就能)~~不仅仅能聊天的`alfred workflow` 2.0
 
 ---
 
@@ -15,13 +15,22 @@
 * 快捷打开聊天窗口
 * 支持搜索好友，匹配昵称、备注、微信号、国家、省份、市。
 * 支持搜索群聊，匹配群聊昵称、群成员昵称、群成员备注名、群成员微信号
-* 支持搜索最近聊天，输入`wx (2个空格)`即可
+* 支持复制微信号、聊天内容(**2.0**)
+* 聊天记录界面支持快捷打开微信聊天窗口(`Command + ↩︎`)(**2.0**)
+* 支持预览长文本消息(`Command + L`)(**2.0**)
+* 支持查看好友高清头像(`Command + Y`或者`shift`)(**2.0**)
+* 支持预览视频、表情、图片、网址等消息(`Command + Y`或者`shift`)(**2.0**)
+* 支持播放音频消息(直接选中音频消息回车)(**2.0**)
+* 聊天记录显示发送时间(**2.0**)
+* 默认打开最近聊天记录 & 获取聊天内容(**2.0**)
 
 ---
 
 ### Demo 演示
 
 ![alfred](./ScreenShots/alfred_search.gif)
+
+~~懒得录制 gif 图了，自己看[功能](#功能) 或者 [使用](#使用) 或者 `Alfred` 中的提示~~
 
 ---
 
@@ -38,7 +47,12 @@
 
 ![keyword](./ScreenShots/alfred_send.png)
 
-* 搜索到好友，点击 `Command + Enter` 键，快捷打开聊天窗口。
+* 搜索到好友(或者发送消息界面)，点击 `Command + Enter` 键，快捷打开聊天窗口。
+* 选中好友(聊天记录)，点击 `Command + C` 键，复制好友微信号(聊天内容)。
+* 选中聊天消息，`Command + L`预览长文本消息。
+* 选中好友，`Command + Y`(`shift`)查看好友高清头像。
+* 选中视频、表情、图片、网址等消息`Command + Y`(`shift`)预览非文本内容。
+* 选中音频消息，在未输入发送内容时回车，可播放音频。
 
 ---
 
