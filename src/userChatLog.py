@@ -24,7 +24,17 @@ def main(wf):
                 copyText = item['copyText']
                 qlurl = item['url']
                 srvId = str(item['srvId'])
-                wf.add_item(title=title, subtitle=subtitle, icon=icon, valid=True, largetext=title, quicklookurl=qlurl, copytext=copyText, arg=srvId)
+                titleLen = len(title)
+                lineNun = 70
+                if titleLen < lineNun:
+                    largetext = title
+                else:
+                    titleArray = []
+                    for n in range(titleLen):
+                        if n % lineNun == 0:
+                            titleArray.append(title[n:n+lineNun])
+                    largetext='\n'.join(titleArray)
+                wf.add_item(title=title, subtitle=subtitle, icon=icon, valid=True, largetext=largetext, quicklookurl=qlurl, copytext=copyText, arg=srvId)
         else:
             wf.add_item(title='找不到联系人…',subtitle='请重新输入')
     except IOError:
