@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
 import sys,os
-from workflow import Workflow
+from workflow import Workflow3
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+# reload(sys)
+# sys.setdefaultencoding('utf-8')
 
 def main(wf):
     userId = os.getenv('userId')
@@ -16,5 +16,5 @@ def main(wf):
             wf.add_item(title=title, subtitle=subTitle, icon=icon, valid=True, arg=sys.argv[1])
     wf.send_feedback()
 if __name__ == '__main__':
-    wf = Workflow()
+    wf = Workflow3()
     sys.exit(wf.run(main))

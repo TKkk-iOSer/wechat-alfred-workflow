@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>tkkk.wechatPlugin</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>0D88BE16-D0D5-4489-B54E-9C3A9C7FB187</key>
@@ -78,6 +80,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C06A928C-83DB-4998-A6C9-04DDE70705A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7DECB235-5455-435D-90AF-1A51C26046DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C7F97CC1-A708-4992-9A14-DBCE8FED26BE</key>
 		<array>
 			<dict>
@@ -112,7 +127,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>python openSession.py {query}</string>
+				<string>python3 openSession.py {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -173,8 +188,10 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
 				<key>argumenttrimmode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -192,7 +209,7 @@
 				<key>runningsubtext</key>
 				<string>搜索中…</string>
 				<key>script</key>
-				<string>python search.py "{query}"</string>
+				<string>python3 search.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -211,6 +228,37 @@
 			<key>uid</key>
 			<string>7DECB235-5455-435D-90AF-1A51C26046DD</string>
 			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>-1</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>double tap</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>C06A928C-83DB-4998-A6C9-04DDE70705A3</string>
+			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
@@ -220,6 +268,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -237,7 +287,7 @@
 				<key>runningsubtext</key>
 				<string>正在搜索中…</string>
 				<key>script</key>
-				<string>python userChatLog.py "{query}"</string>
+				<string>python3 userChatLog.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -256,7 +306,7 @@
 			<key>uid</key>
 			<string>0D88BE16-D0D5-4489-B54E-9C3A9C7FB187</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -266,7 +316,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>python sendMsg.py "{query}"</string>
+				<string>python3 sendMsg.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -305,7 +355,8 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>配合微信插件</string>
+	<string>配合微信插件
+支持python3</string>
 	<key>uidata</key>
 	<dict>
 		<key>0D88BE16-D0D5-4489-B54E-9C3A9C7FB187</key>
@@ -318,7 +369,7 @@
 		<key>7DECB235-5455-435D-90AF-1A51C26046DD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>220</integer>
 			<key>ypos</key>
 			<integer>100</integer>
 		</dict>
@@ -335,6 +386,13 @@
 			<integer>730</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>C06A928C-83DB-4998-A6C9-04DDE70705A3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>100</integer>
 		</dict>
 		<key>C7F97CC1-A708-4992-9A14-DBCE8FED26BE</key>
 		<dict>
@@ -361,10 +419,12 @@
 	<key>variables</key>
 	<dict>
 		<key>baseUrl</key>
-		<string>http://127.0.0.1:52700/wechat-plugin/</string>
+		<string>http://127.0.0.1:57270/wechat-plugin/</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string></string>
+	<string>3.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/TKkk-iOSer</string>
 </dict>

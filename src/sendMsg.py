@@ -1,9 +1,7 @@
 # -*- coding:utf-8 -*-
 import sys,os
-from workflow import Workflow, web
-
-reload(sys)
-sys.setdefaultencoding('utf-8')
+from workflow import Workflow
+import web
 
 def main(wf):
     srvId = sys.argv[1]
@@ -14,7 +12,6 @@ def main(wf):
     url = baseUrl + 'send-message'
     data = {'userId':userId, 'content': msgContent, 'srvId': srvId}
     r = web.post(url=url,data=data)
-    r.raise_for_status()
     wf.send_feedback()
 
 if __name__ == '__main__':

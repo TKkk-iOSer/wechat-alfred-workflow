@@ -1,15 +1,22 @@
 
-## wechat workflow for Alfred 2.0
+## wechat workflow for Alfred 3.0
 
 ![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)  ![language](https://img.shields.io/badge/language-python-blue.svg)
   ![release](https://img.shields.io/badge/release-v2.0-brightgreen.svg) 
  [![GitHub license](https://img.shields.io/github/license/TKkk-iOSer/wechat-workflow.svg)](https://github.com/TKkk-iOSer/wechat-workflow/blob/master/LICENSE)
- 
-一款让你不用打开微信就能聊天的`alfred workflow` 2.0
+
+一款让你不用打开微信就能聊天的`alfred workflow` 3.0
 
 ---
 
+### 安装
+
+* 下载 WeChat Plugin.alfredworkflow
+* 安装requests：pip install requests
+* 打开微信-菜单栏-微信小助手-小助手-开启alfred功能
+
 ### 功能
+
 * 快速搜索微信好友、群聊
 * 快捷发送消息 
 * 快捷打开聊天窗口
@@ -23,6 +30,7 @@
 * 支持播放音频消息(直接选中音频消息回车)(**2.0**)
 * 聊天记录显示发送时间(**2.0**)
 * 默认打开最近聊天记录 & 获取聊天内容(**2.0**)
+* 支持python3(**3.0**)
 
 ---
 
@@ -63,7 +71,7 @@
 ---
 
 #### 听说你想请我喝下午茶？😏
- 
+
 <img src="http://upload-images.jianshu.io/upload_images/965383-cbc86dc1d75a6242.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" height="250" hspace="50"/>&nbsp;&nbsp;&nbsp;<img src="http://upload-images.jianshu.io/upload_images/965383-76a1c7c91b987e1a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" height="250" hspace="50"  />
 
 

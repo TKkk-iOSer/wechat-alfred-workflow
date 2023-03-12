@@ -1,21 +1,18 @@
 # -*- coding:utf-8 -*-
 import json,sys,os
-from workflow import Workflow, web
+from workflow import Workflow
+import web
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 def main(wf):
+    query = sys.argv[1].encode()
     userId = os.getenv('userId')
     baseUrl = os.getenv('baseUrl')
-    url = baseUrl + 'chatlog?userId=' + userId + '&count=45'
+    url = baseUrl + 'chatlog?userId=' + userId + '&count=60'
     try:
-        result = web.get(url=url)
-        result.raise_for_status()
-        resp = result.text
-        userList = json.loads(resp)
+        userList = web.get(url=url)
         if len(userList) > 0:
-            wf.store_data('wechat_send_content',sys.argv[1])
+            wf.store_data('wechat_send_content',query)
             for item in userList:
                 title = item['title']
                 subtitle = item['subTitle']
@@ -24,16 +21,16 @@ def main(wf):
                 copyText = item['copyText']
                 qlurl = item['url']
                 srvId = str(item['srvId'])
-                titleLen = len(title)
+                l = len(title)
                 lineNun = 70
-                if titleLen < lineNun:
-                    largetext = title
-                else:
-                    titleArray = []
-                    for n in range(titleLen):
-                        if n % lineNun == 0:
-                            titleArray.append(title[n:n+lineNun])
-                    largetext='\n'.join(titleArray)
+                # if l < lineNun:
+                largetext = title
+                # else:
+                #     b = []
+                #     for n in range(l):
+                #         if n % lineNun == 0:
+                #             b.append(title[n:n+lineNun])
+                #     largetext='\n'.join(b)
                 wf.add_item(title=title, subtitle=subtitle, icon=icon, valid=True, largetext=largetext, quicklookurl=qlurl, copytext=copyText, arg=srvId)
         else:
             wf.add_item(title='找不到联系人…',subtitle='请重新输入')
