@@ -6,9 +6,10 @@ import web
 def main(wf):
     query = sys.argv[1]
     baseUrl = os.getenv('baseUrl')
-    url = baseUrl + 'user?keyword=' + query
+    url = baseUrl + 'user?keyword=' 
     try:
         userList = web.get(url)
+        userList = wf.filter(query, userList, key = lambda d: d['title'], min_score=20)
         if len(userList) > 0:
             for item in userList:
                 title = item['title']
